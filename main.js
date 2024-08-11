@@ -2,6 +2,7 @@ require('dotenv').config()
 
 const { Player } = require('discord-player');
 const { Client, GatewayIntentBits } = require('discord.js');
+const port = process.env.PORT || 2550;
 
 global.client = new Client({
     intents: [
